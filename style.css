@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(stadium.png);
+    background-size: cover;
+    padding: 0.8%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.logo img{
+    width: 15vw;
+    height: 25vh;
+}
+
+.content{
+    top: 10%;
+    position: absolute;
+    color: aliceblue;
+    left: 40%;
+    padding: 20px 0;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+mark{
+    background-color: rgba(0,0,0,0);
+    color: aliceblue;
+}
+
+.content h2{
+    font-size: 34px;
+    padding-left: 20%;
+}
+
+.cntdwn{
+    display: flex;
+    padding: 5%;
+    width: 35vw;
+    height: 30vh;
+    border: 0px solid red;
+}
+
+.cntdwn:hover{
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.cntdwn div{
+    flex-basis: 100px;
+}
+
+.cntdwn p{
+    font-size: 80px;
+    color: darkslategray;
+}
+
+.cntdwn span{
+    font-size: 20px;
+    padding-left: 20%;
+    color: rgb(4, 7, 54);
+
+}
+
+@media(max-width:700px){
+    
+    .logo img{
+        width: 30vw;
+        height: 13vh;
+    }
+    
+    mark{
+        background-color:  rgba(0,0,0,0.7);
+        color: aliceblue;
+    }
+
+    .content h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .content{
+        left: 20%;
+    }
+
+    .cntdwn{
+        display: flex;
+        padding: auto;
+        width: 70vw;
+        height: 20vh;
+        border: 5px solid white;
+        border-radius: 5px;
+        background-color: rgb(250, 235, 215,0.5);
+    }
+
+    .cntdwn p{
+        font-size: 40px;
+        color: darkslategray;
+    }
+    
+    .cntdwn span{
+        font-size: 20px;
+        padding-left: 20%;
+        color: rgb(4, 7, 54);
+    
+    }
+}
